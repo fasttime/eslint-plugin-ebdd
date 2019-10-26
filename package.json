@@ -1,0 +1,36 @@
+{
+  "name": "eslint-plugin-ebdd",
+  "version": "0.1.0",
+  "description": "ESLint environment for Mocha EBDD interface",
+  "keywords": [
+    "bdd",
+    "ebdd",
+    "eslint",
+    "eslint-plugin",
+    "eslintplugin",
+    "mocha",
+    "test"
+  ],
+  "homepage": "https://github.com/fasttime/eslint-plugin-ebdd",
+  "bugs": "https://github.com/fasttime/eslint-plugin-ebdd/issues",
+  "license": "ISC",
+  "author": "Francesco Trotta <ft@fasttime.org> (https://github.com/fasttime)",
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fasttime/eslint-plugin-ebdd.git"
+  },
+  "scripts": {
+    "lint": "npm install && gulp"
+  },
+  "devDependencies": {
+    "gulp": "4.0.2",
+    "gulp-fasttime-lint": "~0.17.0"
+  },
+  "peerDependencies": {
+    "ebdd": ">=0.4.0",
+    "eslint": ">=6.0.0"
+  }
+}
