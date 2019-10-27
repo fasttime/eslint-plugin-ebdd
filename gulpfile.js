@@ -10,13 +10,9 @@ function lint()
     lint
     (
         {
-            src: 'index.js',
+            src: '*.js',
             envs: 'node',
-        },
-        {
-            src: 'gulpfile.js',
-            envs: 'node',
-            parserOptions: { ecmaVersion: 11 },
+            parserOptions: { ecmaVersion: 9 },
         },
     );
     return stream;
