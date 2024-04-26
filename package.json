@@ -22,7 +22,8 @@
     "url": "https://github.com/fasttime/eslint-plugin-ebdd.git"
   },
   "scripts": {
-    "lint": "npm install && gulp"
+    "lint": "npm install && gulp",
+    "release": "npm version -m \"Release %s\" --tag-version-prefix="
   },
   "devDependencies": {
     "@origin-1/eslint-config": "eslint-8",
