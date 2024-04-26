@@ -21,6 +21,19 @@ npm i -g eslint-plugin-ebdd
 
 ## Usage
 
+### Flat Config
+
+Import `"eslint-plugin-ebdd"` in your `eslint.config.js` configuration file.
+Use the `globals` export to define `languageOptions.globals` in your config.
+
+```js
+import { globals: ebddGlobals } from "eslint-plugin-ebdd";
+
+export default [{ languageOptions: { globals: ebddGlobals } }];
+```
+
+### Legacy Config
+
 Add `"ebdd"` to the plugins section of your `.eslintrc` configuration file.
 You can omit the `eslint-plugin-` prefix.
 Then configure the environment `ebdd/ebdd` under the `"env"` section.
